@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade</title>
+</head>
+<body>
+    <script>
+        var nascimento = window.prompt('Que ano você nasceu?')
+        
+
+        while(nascimento >= 2007)
+        {
+            window.alert('Você é menor de idade, volte depois!')
+            nascimento = window.prompt('Que ano você nasceu?')
+        }
+
+        var anoa = window.prompt('Qual ano atual?')
+
+        var ano = (anoa - nascimento)
+        
+        
+        console.log(`Você tem ${ano} anos de idade`)
+        window.document.write(`Você tem ${ano} anos de idade`)
+
+
+
+    </script>
+    
+</body>
+</html>
