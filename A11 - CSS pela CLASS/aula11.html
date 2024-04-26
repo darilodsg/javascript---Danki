@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    
+</head>
+<body>
+    <div class="box">oi</div>
+    <div class="box">oi</div>
+    <div class="box">oi</div>
+    <div class="box">oi</div>
+    <div class="box">oi</div>
+
+
+    <script>
+        var els = document.getElementsByClassName('box');
+        
+        for(i = 0; i < els.length; i++){
+            var el = els[i]
+
+            el.style.width = '100px'
+            el.style.height = '100px'
+            el.style.backgroundColor = 'red'
+            el.style.alignItems = 'center'
+            el.style.textAlign = 'center'
+            el.style.display = 'grid'
+            el.style.margin = 'auto'
+            el.style.marginTop = '10px'
+        }
+
+
+    </script>
+</body>
+</html>
