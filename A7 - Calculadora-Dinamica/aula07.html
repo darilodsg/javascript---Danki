@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dinamica</title>
+</head>
+<body>
+    <script>
+        var i = window.prompt('Digite o primeiro número:')
+        var s = window.prompt('Escolha uma opção: 1 = somar, 2 = subtrair, 3 = dividir, 4 = multiplicar')
+        while(s != 1 && s != 2 && s != 3 && s != 4)
+        {
+            window.alert('Por favor, escolha uma opção!')
+            window.prompt('Escolha uma opção: 1 = somar, 2 = subtrair, 3 = dividir, 4 = multiplicar')
+        }
+        
+        var f = window.prompt('Digite o próximo número:')
+
+        i = parseInt(i);
+        f = parseInt(f);
+
+        var r = 0;
+
+        if(s == '1'){
+            r = i + f
+        }else if(s == '2'){
+            r = i - f
+        }else if(s == '3'){
+            r = i / f
+        }else if(s == '4'){
+            r = i * f
+        }
+
+        //window.document.write(`o valor é ${r}`)
+        window.alert(`O resultado é: ${r}`)
+        location.reload(window.alert) //recarregar a página
+
+    </script>
+</body>
+</html>
